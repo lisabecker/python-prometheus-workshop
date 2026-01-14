@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM python:3.14.2-alpine
 COPY requirements.txt /
 # layer caching in docker means this will only install if requirements have changed
 RUN pip install -r /requirements.txt
